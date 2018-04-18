@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3b1baa</color>
+    <color name="colorPrimaryDark">#2c1e5b</color>
+    <color name="colorAccent">#bf5f06</color>
+    <color name="colorOrangeFade">#73bf5f06</color>
+    <color name="pinkAccent">#551055</color>
+    <color name="greenAccent">#004916</color>
+    <color name="secondaryText">#efffe5</color>
+    <color name="opaquePink">#96551055</color>
+    <color name="opaquePurple">#963b1baa</color>
+
+    //LOGIN + SIGNUP FIREBASE
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logout_bg">#ff6861</color>
+</resources>

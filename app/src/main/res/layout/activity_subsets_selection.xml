@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="rendelaney.poketools_tcg.SubsetsSelection">
+
+    <TextView
+        android:id="@+id/subset_head_txt"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/pinkAccent"
+        android:text="Subsets"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <ListView
+        android:id="@+id/subsets_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="527dp"
+        tools:layout_editor_absoluteY="24dp"
+        android:divider="#96ffffff"
+        android:dividerHeight="4px"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/subset_head_txt" />
+</android.support.constraint.ConstraintLayout>

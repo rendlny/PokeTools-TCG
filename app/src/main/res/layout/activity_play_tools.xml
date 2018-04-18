@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rendelaney.poketools_tcg.PlayTools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/play_tools_btn_timer_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/play_tools_btn_timer_1"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="686dp" />
+
+        <ImageView
+            android:id="@+id/play_tools_img_coin"
+            android:layout_width="60dp"
+            android:layout_height="87dp"
+            android:layout_below="@+id/play_tools_btn_timer_pause"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/relativeLayout"
+            android:src="@drawable/coin_heads" />
+
+        <Button
+            android:id="@+id/play_tools_btn_coin_flip"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/play_tools_img_coin"
+            android:layout_below="@+id/play_tools_img_coin"
+            android:text="@string/flip" />
+
+        <Button
+            android:id="@+id/play_tools_btn_timer_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/play_tools_btn_timer_3"
+            tools:layout_editor_absoluteX="280dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="368dp"
+            android:layout_height="244dp"
+            android:layout_alignBottom="@+id/play_tools_btn_timer_pause"
+            android:layout_toEndOf="@+id/play_tools_btn_timer_start"
+            android:layout_toStartOf="@+id/play_tools_btn_timer_pause"
+            android:background="@android:color/black"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/play_tools_txt_timer_counter"
+                android:layout_width="352dp"
+                android:layout_height="47dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:text="00:00:00"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+        </RelativeLayout>
+
+        <Spinner
+            android:id="@+id/play_tools_spinner_list"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/play_tools_btn_coin_flip"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:textSize="12sp"></Spinner>
+
+        <ImageButton
+            android:id="@+id/play_tools_img_btn_gx"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginTop="16dp"
+            android:layout_toStartOf="@+id/play_tools_img_coin"
+            android:background="@drawable/gx" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_alignBottom="@+id/play_tools_btn_active_minus"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="19dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="135dp">
+
+                <TextView
+                    android:id="@+id/play_tools_txt_cond_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/play_tools_spinner_list"
+                    android:layout_below="@+id/play_tools_spinner_list"
+                    android:scrollbars="vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="137dp"
+                    tools:text="@string/cond_desc_asleep" />
+            </ScrollView>
+
+            <Button
+                android:id="@+id/play_tools_btn_active_plus"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/relativeLayout2"
+                android:elevation="0dp"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/play_tools_btn_active_minus"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/play_tools_btn_active_plus"
+                android:layout_toEndOf="@+id/scrollView2"
+                android:text="@string/minus" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_alignBottom="@+id/play_tools_btn_active_plus"
+                android:layout_toEndOf="@+id/play_tools_btn_active_minus"
+                android:background="@android:color/background_dark">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/white"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

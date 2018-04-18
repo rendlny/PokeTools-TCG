@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1090989907773",
+    "firebase_url": "https://poketools-tcg.firebaseio.com",
+    "project_id": "poketools-tcg",
+    "storage_bucket": "poketools-tcg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090989907773:android:c75eaa2b73ee5ad9",
+        "android_client_info": {
+          "package_name": "rendelaney.poketools_tcg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090989907773-lqpo5pfe4vj6g9b6gtaf1f6bau2nfpeh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rendelaney.poketools_tcg",
+            "certificate_hash": "7f82c8dc0c12663a35caf2d1926f3492ad2e86d1"
+          }
+        },
+        {
+          "client_id": "1090989907773-920kia35mcgstekulh06p9lcooaevvup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaEwEA1iBAtb3pDbq32YeEWaqDAOrDPcE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090989907773-920kia35mcgstekulh06p9lcooaevvup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
